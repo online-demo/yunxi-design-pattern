@@ -5,6 +5,8 @@ package com.example.design.pattern.prototype;
  * @Date : 2021-01-01 11:41
  * @Version : V1.0
  * @Description : 形状
+ *
+ * TODO：深拷贝和浅拷贝的区别？
  */
 public abstract class Shape implements Cloneable {
 

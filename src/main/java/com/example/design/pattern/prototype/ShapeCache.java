@@ -9,8 +9,17 @@ import java.util.HashMap;
  * @Description : 从数据库获取实体类，并把它们存储在一个 Hashtable 中
  */
 public class ShapeCache {
+    /**
+     * 形状的缓存
+     */
     private static HashMap<String, Shape> shapeMap = new HashMap<>();
 
+    /**
+     * 返回Shape对象
+     *
+     * @param shapeId
+     * @return
+     */
     public static Shape getShape(String shapeId) {
         Shape cachedShape = shapeMap.get(shapeId);
         return (Shape) cachedShape.clone();
